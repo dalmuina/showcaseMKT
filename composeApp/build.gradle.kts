@@ -89,6 +89,9 @@ kotlin {
 android {
     namespace = "com.dalmuina.showcaseMKT"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
+    android {
+        sourceSets["main"].res.srcDirs("src/commonMain/composeResources")
+    }
 
     defaultConfig {
         applicationId = "com.dalmuina.showcaseMKT"
